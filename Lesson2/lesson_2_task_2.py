@@ -5,6 +5,9 @@ def is_year_leap(n):
              return(False)
 print(is_year_leap(int(input("Введите год: "))))
 
-
+# год 2024
+year = 2024
+result = is_year_leap(year)
+print(f"Год: {year}: {result}")
  
 
