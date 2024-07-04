@@ -1,3 +1,5 @@
-def square(a): 
+import math
+def square(a):
     print(a*a)
-square(5)
+square(math.ceil(5.5))
+
