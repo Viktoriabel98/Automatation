@@ -1,7 +1,7 @@
 class Smartphone: 
      
-    def ___init__(self, marka, model, Telnumber):
-        self.marka = marka
+    def __init__(self, mark, model, telnum):
+        self.mark = mark
         self.model = model
-        self.number = Telnumber
+        self.telnum = telnum
         

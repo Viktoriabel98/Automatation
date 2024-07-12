@@ -1,16 +1,18 @@
 class User:
     
-    def __init__(self, firstname):
-        print("Имя: " + firstname) 
+    def __init__(self, first_name, last_name):
+        self.first_name = first_name
+        self.last_name = last_name
 
-    def Lastname(self, lastname):
-        print("Фамилия: "+ lastname)
-    
-    def FullName(self, fullname):
-        print("Имя и Фамилия: " + fullname)
+    def print_first_name(self):
+        print(self.first_name)
+
+    def print_last_name(self):
+        print(self.last_name)
+
+    def print_full_name(self):
+        print(f'{self.first_name} {self.last_name}')
                  
-User1 = User("Kate")
-User1.Lastname("Strong")
-User1.FullName("Kate" + " " + "Strong")   
+  
 
 
