@@ -32,11 +32,12 @@ def  test_trim():
 ])
 
 def test_to_list(string, delimeter, result):
-    if delimeter is None:
+    if delimeter is None or "" or []:
         res = utils.to_list(string)
     else:
         res = utils.to_list(string, delimeter)
         assert res == result
+        
 
 @pytest.mark.parametrize('string, symbol, result', [
     ("шкаф", "ш", True),
@@ -77,7 +78,7 @@ def tes_delete_symbol(string, symbol, result):
 
 def test_starts_with(string, symbol, result):
     res = utils.starts_with(string, symbol)
-    assert result == result
+    assert res == result
 
 @pytest.mark.parametrize('string, symbol, result', [
     ("шкаф", "ф", True),
@@ -92,7 +93,7 @@ def test_starts_with(string, symbol, result):
 
 def test_end_with(string, symbol, result):
     res = utils.end_with(string, symbol)
-    assert result == result
+    assert res == result
 
 @pytest.mark.parametrize('string, result', [
     ("", True),
