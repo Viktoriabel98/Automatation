@@ -23,7 +23,7 @@ def test_data_types_form(chrome_browser):
     assert "success" in chrome_browser.find_element(By.ID, "first-name").get_attribute("class")
     assert "success" in chrome_browser.find_element(By.ID, "last-name").get_attribute("class")
     assert "success" in chrome_browser.find_element(By.ID, "address").get_attribute("class")
-    assert "success" in chrome_browser.find_element(By.ID, "e-mail").get_attribute("class")
+    assert "success" in chrome_browser.find_element(By.ID, "email").get_attribute("class")
     assert "success" in chrome_browser.find_element(By.ID, "phone").get_attribute("class")
     assert "success" in chrome_browser.find_element(By.ID, "city").get_attribute("class")
     assert "success" in chrome_browser.find_element(By.ID, "country").get_attribute("class")
