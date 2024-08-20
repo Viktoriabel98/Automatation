@@ -15,9 +15,9 @@ def test_assertion(chrome_browser):
         data_fild.get_class_phone()
         data_fild.get_class_city()
         data_fild.get_class_country()
-        data_fild.get_class_jobposition()
+        data_fild.get_class_job_position()
         data_fild.get_class_company()
-        data_fild.get_class_zipcode()
+        data_fild.get_class_zip_code()
 
         # Проверяем, что в классе есть ожидаемый результат
         assert "success" in data_fild.get_class_first_name()
@@ -26,6 +26,6 @@ def test_assertion(chrome_browser):
         assert "success" in data_fild.get_class_phone()
         assert "success" in data_fild.get_class_city()
         assert "success" in data_fild.get_class_country()
-        assert "success" in data_fild.get_class_jobposition()
+        assert "success" in data_fild.get_class_job_position()
         assert "success" in data_fild.get_class_company()
-        assert "success" in data_fild.get_class_zipcode()
+        assert "danger" in data_fild.get_class_zip_code()
