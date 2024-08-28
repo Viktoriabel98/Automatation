@@ -3,7 +3,6 @@ from Lesson7.Data_types.Pages.datafildes import DataFild
 
 def test_assertion(chrome_browser):
         main_page = MainPage(chrome_browser)
-        main_page.find_fields() # Поиск полей для заполнения
         main_page.filling_in_the_fields() #Заполняем поля
         main_page.click_submit_button() # Подтверждаем заполнение формы
 

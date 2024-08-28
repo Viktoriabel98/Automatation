@@ -8,7 +8,7 @@ class MainPage:
     def __init__(self, browser):
         self.browser = browser
         self.browser.get(Test_URL)
-
+       
     def filling_in_the_fields(self):
         self.browser.find_element(By.NAME, "first-name").send_keys(first_name)
         self.browser.find_element(By.NAME, "last-name").send_keys(last_name)
