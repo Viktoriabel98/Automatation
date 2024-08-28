@@ -32,12 +32,6 @@ class CalcMain:
         WebDriverWait(self.browser, 46).until(EC.text_to_be_present_in_element((By.CLASS_NAME, "screen"), text))
         return self.browser.find_element(By.CLASS_NAME, "screen").text  
 
-    def test_calculator_assert(chrome_browser):
-        calcmain = CalcMain(chrome_browser)
-        calcmain.insert_time()
-        calcmain.clicking_buttons()
-        text = "15"
-        assert text in calcmain.wait_button_gettext(text)
 
 
            
