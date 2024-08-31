@@ -43,7 +43,7 @@ class DataFild:
         return self.browser.find_element(By.ID, "country").get_attribute("class")
 
     def get_class_job_position(self):
-        return self.browser.find_element(By.ID, "job_position").get_attribute("class")
+        return self.browser.find_element(By.ID, "job-position").get_attribute("class")
 
     def get_class_company(self):
         return self.browser.find_element(By.ID, "company").get_attribute("class")
