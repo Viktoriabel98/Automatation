@@ -19,31 +19,31 @@ class DataFild:
 
 # получаем значения классов полей
     def get_class_first_name(self):
-        return self.browser.find_element(By.NAME, "first-name").get_attribute("class")
+        return self.browser.find_element(By.ID, "first-name").get_attribute("class")
 
     def get_class_last_name(self):
-        return self.browser.find_element(By.NAME, "last-name").get_attribute("class")
+        return self.browser.find_element(By.ID, "last-name").get_attribute("class")
 
     def get_class_address(self):
-        return self.browser.find_element(By.NAME, "address").get_attribute("class")
+        return self.browser.find_element(By.ID, "address").get_attribute("class")
 
     def get_class_email(self):
-        return self.browser.find_element(By.NAME, "email").get_attribute("class")
+        return self.browser.find_element(By.ID, "email").get_attribute("class")
     
     def get_class_phone(self):
-        return self.browser.find_element(By.NAME, "phone").get_attribute("class")
+        return self.browser.find_element(By.ID, "phone").get_attribute("class")
 
     def get_class_zip_code(self):
-        return self.browser.find_element(By.NAME, "zip-code").get_attribute("class")
+        return self.browser.find_element(By.ID, "zip-code").get_attribute("class")
 
     def get_class_city(self):
-        return self.browser.find_element(By.NAME, "city").get_attribute("class")
+        return self.browser.find_element(By.ID, "city").get_attribute("class")
 
     def get_class_country(self):
-        return self.browser.find_element(By.NAME, "country").get_attribute("class")
+        return self.browser.find_element(By.ID, "country").get_attribute("class")
 
     def get_class_job_position(self):
-        return self.browser.find_element(By.NAME, "job_position").get_attribute("class")
+        return self.browser.find_element(By.ID, "job_position").get_attribute("class")
 
     def get_class_company(self):
-        return self.browser.find_element(By.NAME, "company").get_attribute("class")
+        return self.browser.find_element(By.ID, "company").get_attribute("class")
