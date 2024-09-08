@@ -1,0 +1,5 @@
+login = "standard_user"
+password = "secret_sauce"
+first_name = "Ivan"
+last_name = "Ivanov"
+postal_code = "629002"
